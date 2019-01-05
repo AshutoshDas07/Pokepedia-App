@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:background="@drawable/background1"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Select the Type" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        android:id="@+id/mainview"
+        android:layout_weight="12"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
